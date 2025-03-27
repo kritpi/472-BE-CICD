@@ -5,11 +5,10 @@ on:
     branches: [main]
 
 env:
-  APP_NAME: "472-be-cicd "
+  APP_NAME: "472-be-cicd"
 
 jobs:
   build-and-release:
-    if: github.event.pull_request.merged == true # Run only if PR is merged
     runs-on: ubuntu-latest
     permissions:
       id-token: write
