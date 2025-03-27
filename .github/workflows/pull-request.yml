@@ -3,7 +3,7 @@ name: "Feature to Develop branch Pull Request"
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    # branches: -develop
+    branches: [develop]
 
 permissions:
   contents: read
@@ -25,7 +25,7 @@ jobs:
         run: go mod tidy
 
       - name: Run Unit Test in Rest Api Handler Uint
-        run: go test -v -cover ./internal/adapters/rest
+        run: go test -v -cover ./domain/usecases/
 
   build-docker-file:
     needs: build-and-test
