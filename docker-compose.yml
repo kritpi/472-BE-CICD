@@ -7,7 +7,7 @@ services:
       - "8000:8000"
     build:
       context: ./
-      dockerfile: docker/dev.Dockerfile
+      dockerfile: ./docker/dev.Dockerfile
     environment:
       SERVER_PORT: 8000
     volumes:

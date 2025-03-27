@@ -4,8 +4,8 @@
 /build
 
 # Ignore Go dependencies
-go.sum
-go.mod
+#go.sum
+#go.mod
 
 # Ignore IDE/editor files
 .vscode/
