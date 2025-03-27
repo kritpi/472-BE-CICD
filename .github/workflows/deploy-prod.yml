@@ -24,7 +24,8 @@ jobs:
         run: go mod tidy
 
       - name: Build Docker Image
-        run: docker build -t ampqq/472-be-cicd:latest .
+        # run: docker build -t ampqq/472-be-cicd:latest .
+        run: docker build -t 472-be-cicd -f docker/dev.Dockerfile .
 
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
