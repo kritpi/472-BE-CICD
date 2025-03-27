@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Docker Image
         # run: docker build -t ampqq/472-be-cicd:latest .
-        run: docker build -t 472-be-cicd -f docker/dev.Dockerfile .
+        run: docker build -t ampqq/472-be-cicd:latest -f docker/dev.Dockerfile .
 
       - name: Log in to Docker Hub
         env:
