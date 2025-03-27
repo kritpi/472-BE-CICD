@@ -68,8 +68,8 @@ jobs:
 
       - name: "Commit Updated Version File"
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "ampqq"
+          git config --global user.email "kritpiruch@gmail.com"
           git add VERSION
           git commit -m "Bump version to ${{ env.NEW_VERSION }}"
           git push origin main
