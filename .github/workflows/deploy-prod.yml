@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: ${{ secrets.GO_VERSION }}
+          go-version: 1.21-alpine
 
       - name: Install Dependencies
         run: go mod tidy
