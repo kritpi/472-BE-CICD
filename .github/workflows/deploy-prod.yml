@@ -1,13 +1,11 @@
 name: "PR Docker Build & Release"
 on:
   pull_request:
-    branches:
-      - main
-    types:
-      - closed # Triggers only when the PR is merged
+    types: [opened, synchronize, reopened]
+    branches: [main]
 
 env:
-  APP_NAME: "472-be-cicd"
+  APP_NAME: "472-be-cicd "
 
 jobs:
   build-and-release:
