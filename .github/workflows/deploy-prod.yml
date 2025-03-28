@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: "From Develop to Main branch CI"
 on:
   push:
